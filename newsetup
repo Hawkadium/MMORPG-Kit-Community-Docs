@@ -1,0 +1,19 @@
+1. Create new folder and label it your project name. 
+2. Create two child folders, GameData and Scenes. 
+3. Go to Demo > Scenes > and duplicate "00Init", "01Home", "Map001". 
+4. Drag the three new scenes to your new MyGame > Scenes folder. 
+5. Rename the scenes appropriately. Ex: "MyGame_Init", "MyGame_Home", "MyGame_Map001". 
+6. Go to Demo > GameData and duplicate the "GameDatabase" asset. 
+7. Drag and drop your new "GameDatabase 1" asset to your MyGame > GameData folder. 
+8. Rename the asset to ex: "MyGame_GameDatabase". 
+9. Create a new folder inside GameData, called "MapInfo". 
+10. Open MapInfo folder, right click and selected Create > Create GameData > Map Info. 
+11. Rename "Map Info" to ex: "MyGame_TestMap". This map info will act as a configuration file for the scene of your choosing. 
+12. Navigate to your newly created scene "MyGame_Map001" and drap and drop it into the Map Info Configs > Scene.  Then setup the rest of the properties as you desire. 
+13. Open your "MyGame_Map001". Delete all HarvestableSpawnArea, MonsterSpawnArea, NPCs, Canvas, and Monsters that you no longer want to use. Make sure you leave the "EventSystem" in the Hierarchy.  You are now free to design your map as you prefer. *Bonus Tip: Don't forget to rebake your navmesh! 
+14. Go to your GameData folder. Select your GameDatabase asset. In the Inspector, scroll down to Map Infos.  Set the Size to 0. Click the Lock Icon at the top right of the Inspector. Navigate into the MapInfo folder.  Grab your "MyGame_TestMap" asset and drag it over the "Map Infos" in the Inspector.  This should populate a size of 1 with Element 0 as your Map Info. You can now unlock your Inspector. 
+15. Navigate to your "MyGame_Init" scene. Open the scene and select GameInstance from the game Hierarchy. In your Inspector, navigate to the Game Instance (Script). Navigate to the Scene/Maps section. Now click and drag your "MyGame_Home" scene into the Home Scene in the Inspector. 
+16. Navigate to your GameData folder. Right click and select Create > Create GameDatabase > NPC Database.  Rename the NPC Database to your MyGameNPCDatabase. 
+17. In your GameData folder. Right click and select Create > Create GameDatabase > Warp Portal Database.  Rename the Warp Portal Database to your MyGame WarpPortal Database. 
+18. Select GameInstance from the game Hierarchy. In the Inspector, scroll down to the Gameplay Database/Settings section. Drag and drop the corresponding Game, Warp and NPC Database files with your newly created ones. 
+19. Go to File > Build Settings... Press Ctrl+A in the Scenes In Build window, to select all.  Press Delete on the keyboard. Navigate to your new scenes folder and select Init, Home and all Maps.  Then drag and drop them into the Scenes In Build windows. Single click the Init scene and drag it to the top of the list. Slot 0.  Then make sure that Home is in Slot 1. The rest of your scenes can be in any order. 
