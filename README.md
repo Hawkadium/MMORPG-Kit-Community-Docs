@@ -1,4 +1,5 @@
 ## Welcome to GitHub Pages
+[How to setup your own project inside the kit.](https://github.com/Hawkadium/MMORPG-Kit-Community-Docs/blob/master/newsetup)
 
 You can use the [editor on GitHub](https://github.com/Hawkadium/MMORPG-Kit-Community-Docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
